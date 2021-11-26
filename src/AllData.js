@@ -58,7 +58,7 @@ function AllData() {
                                             </select>
                                         </div>
                                         {/* Refresh Data */}
-                                        {/* <button className='btn btn-primary' onClick={() => setUrl('https://disease.sh/v3/covid-19/countries')}>Refresh Data</button> */}
+                                        <button className='btn btn-primary' onClick={() => setUrl('https://disease.sh/v3/covid-19/countries')}>Refresh Data</button>
 
                                     </div>
                                 </div>
