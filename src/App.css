@@ -1,0 +1,12 @@
+#footer {
+    background-color: rgb(87, 87, 87);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 45px;
+}
+
+#footer a {
+    color: cyan;
+    text-decoration: none;
+}
