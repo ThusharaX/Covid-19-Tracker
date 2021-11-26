@@ -5,7 +5,7 @@ function AllData() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [data, setData] = useState([]);
-    const [url, setUrl] = useState('https://disease.sh/v3/covid-19/countries');
+    const url = 'https://disease.sh/v3/covid-19/countries';
     const [ct, setCountry] = useState('Sri Lanka');
 
     useEffect(() => {
@@ -58,7 +58,7 @@ function AllData() {
                                             </select>
                                         </div>
                                         {/* Refresh Data */}
-                                        <button className='btn btn-primary' onClick={() => setUrl('https://disease.sh/v3/covid-19/countries')}>Refresh Data</button>
+                                        {/* <button className='btn btn-primary' onClick={() => setUrl('https://disease.sh/v3/covid-19/countries')}>Refresh Data</button> */}
 
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@ function AllData() {
                                                     <img className="card-img-top" src={country.countryInfo.flag} alt={country.country} />
                                                 }
                                                 <div className="card-body">
-                                                    <h5 className="card-title">{country.country}</h5>
+                                                    <h4 className="card-title">{country.country}</h4>
                                                     <p className="card-text"></p>
                                                 </div>
                                                 <ul className="list-group list-group-flush">
