@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BarWave from "react-cssfx-loading/lib/BarWave";
 
 function AllData() {
 
@@ -31,7 +32,7 @@ function AllData() {
         return <div>Error: {error.message}</div>;
     }
     else if (!isLoaded) {
-        return <div>Loading...</div>;
+        return <div className="loading"><BarWave /></div>;
     }
     else {
         return (
@@ -102,6 +103,13 @@ function AllData() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                {/* <!--[ footer ] --> */}
+                <div id="footer">
+                    <div class="container">
+                        <p class="footer-block">Project by <a href="https://github.com/ThusharaX" target="_blank" rel="noopener noreferrer">Thushara Thiwanka</a></p>
                     </div>
                 </div>
             </div>
